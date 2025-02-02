@@ -18,7 +18,7 @@ void RenderBitmapText(const char* string, float x, float y, void* font) {
 void RenderMenuOptions() {
     // Render game title
     glColor3f(1.0, 1.0, 1.0); // Set text color to white
-    const char* title = "SPACE SWEEPER";
+    const char* title = "SPACE SHOOTER";
     int titleWidth = glutBitmapLength(GLUT_BITMAP_HELVETICA_18, reinterpret_cast<const unsigned char*>(title));
     RenderBitmapText(title, (glutGet(GLUT_WINDOW_WIDTH) - titleWidth) / 2, glutGet(GLUT_WINDOW_HEIGHT) - 60, GLUT_BITMAP_HELVETICA_18);
 

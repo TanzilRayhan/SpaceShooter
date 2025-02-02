@@ -1,12 +1,12 @@
 /*
 Project Name: Space Shooter
-Course: Computer Graphics
+Couse: Computer Graphics
 Section: C
 Course Teacher: Rahul Biswas
 Semester: Fall 2023-24
 Team members:
             Name                    ID
-    - Md Sadman Shakib Alam     22-46262-1
+    - Md Shadman Shakib Alam    22-46262-1
     - Md Sabbir Sikder          22-46005-1
     - Tanzil Rayhan             22-46300-1
     - Toufiq Ahmed Shishir      22-46260-1
@@ -21,7 +21,7 @@ Team members:
 #include <thread>
 #include <mmsystem.h>
 #define STB_IMAGE_IMPLEMENTATION
-#include <stb/stb_image.h>
+#include "stb_image.h"
 
 #include "common.h"
 #include "engine.h"
