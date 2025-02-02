@@ -333,7 +333,7 @@ std::vector<Pixmap> InitSprites() {
 
     stbi_set_flip_vertically_on_load(true);
     // load player
-    sprite[0].m_data = stbi_load("assets/PNG/playerShip1_red.bmp", &sprite[0].m_width, &sprite[0].m_height, &sprite[0].m_channels, 0);
+    sprite[0].m_data = stbi_load("assets/Components/playerShip1_red.bmp", &sprite[0].m_width, &sprite[0].m_height, &sprite[0].m_channels, 0);
     if (!sprite[0].m_data) {
         fprintf(stderr, "Error loading BMP image: %s\n", stbi_failure_reason());
         exit(1);
@@ -344,7 +344,7 @@ std::vector<Pixmap> InitSprites() {
     sprite[0].HP = 3;
     sprite[0].DP = 20;
     // load laser
-    sprite[1].m_data = stbi_load("assets/PNG/Lasers/laserRed03.bmp", &sprite[1].m_width, &sprite[1].m_height, &sprite[1].m_channels, 0);
+    sprite[1].m_data = stbi_load("assets/Components/Lasers/laserRed03.bmp", &sprite[1].m_width, &sprite[1].m_height, &sprite[1].m_channels, 0);
     if (!sprite[1].m_data) {
         fprintf(stderr, "Error loading BMP image: %s\n", stbi_failure_reason());
         exit(1);
@@ -355,7 +355,7 @@ std::vector<Pixmap> InitSprites() {
     sprite[1].HP = 0;
     sprite[1].DP = 10;
     // load obstacle
-    sprite[2].m_data = stbi_load("assets/PNG/Meteors/meteorGrey_med2.bmp", &sprite[2].m_width, &sprite[2].m_height, &sprite[2].m_channels, 0);
+    sprite[2].m_data = stbi_load("assets/Components/Meteors/meteorGrey_med2.bmp", &sprite[2].m_width, &sprite[2].m_height, &sprite[2].m_channels, 0);
     if (!sprite[2].m_data) {
         fprintf(stderr, "Error loading BMP image: %s\n", stbi_failure_reason());
         exit(1);
@@ -367,7 +367,7 @@ std::vector<Pixmap> InitSprites() {
     sprite[2].DP = 34;
 
     // load player life
-    sprite[3].m_data = stbi_load("assets/PNG/UI/playerLife1_red.bmp", &sprite[3].m_width, &sprite[3].m_height, &sprite[3].m_channels, 0);
+    sprite[3].m_data = stbi_load("assets/Components/UI/playerLife1_red.bmp", &sprite[3].m_width, &sprite[3].m_height, &sprite[3].m_channels, 0);
     if (!sprite[3].m_data) {
         fprintf(stderr, "Error loading BMP image: %s\n", stbi_failure_reason());
         exit(1);
@@ -379,7 +379,7 @@ std::vector<Pixmap> InitSprites() {
     sprite[3].DP = 0;
 
     // load player life
-    sprite[4].m_data = stbi_load("assets/PNG/Meteors/meteorBrown_med1.bmp", &sprite[4].m_width, &sprite[4].m_height, &sprite[4].m_channels, 0);
+    sprite[4].m_data = stbi_load("assets/Components/Meteors/meteorBrown_med1.bmp", &sprite[4].m_width, &sprite[4].m_height, &sprite[4].m_channels, 0);
     if (!sprite[4].m_data) {
         fprintf(stderr, "Error loading BMP image: %s\n", stbi_failure_reason());
         exit(1);
